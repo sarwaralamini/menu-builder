@@ -1,0 +1,73 @@
+.menu-builder {
+    max-width: 800px;
+    margin: 20px auto;
+}
+.menu-item {
+    cursor: move;
+    margin: 5px 0;
+    position: relative;
+}
+.menu-item .card {
+    background: #f8f9fa;
+}
+.nested-menu {
+    margin-left: 30px;
+    min-height: 10px;
+}
+.drag-handle {
+    cursor: move;
+    padding: 8px;
+    color: #6c757d;
+}
+.menu-item.dragging {
+    opacity: 0.5;
+}
+
+.menu-actions {
+    display: none;
+}
+
+
+.card-body:hover > .d-flex > .menu-actions {
+    display: block;
+}
+
+
+.card-body:hover .card-body .menu-actions {
+    display: none;
+}
+
+
+.card-body .card-body:hover > .d-flex > .menu-actions {
+    display: block;
+}
+
+.drop-indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #0d6efd;
+    display: none;
+}
+.drop-indicator.show {
+    display: block;
+}
+.drop-indicator.drop-inside {
+    height: 100%;
+    background-color: rgba(13, 110, 253, 0.1);
+    border: 2px dashed #0d6efd;
+}
+.edit-form {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #dee2e6;
+}
+.edit-form.show {
+    display: block;
+}
+.menu-url {
+    font-size: 0.875em;
+    color: #6c757d;
+    margin-left: 8px;
+}
